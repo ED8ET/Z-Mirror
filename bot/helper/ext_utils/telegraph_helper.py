@@ -3,7 +3,9 @@ from random import SystemRandom
 from time import sleep
 from telegraph import Telegraph
 from telegraph.exceptions import RetryAfterError
-from bot import *
+
+from bot import LOGGER
+
 
 class TelegraphHelper:
     def __init__(self, author_name=None, author_url=None):
@@ -71,7 +73,7 @@ class TelegraphHelper:
                 content=content
             )
         return
-
+    
     def revoke_access_token(self):
         LOGGER.info('Revoking telegraph access token...')
         try:

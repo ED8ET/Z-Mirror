@@ -3,9 +3,12 @@ from os import path, remove
 from re import search
 from time import time
 from urllib.parse import parse_qs, urlparse
+
 from bencoding import bdecode, bencode
 from requests import get
+
 from bot import LOGGER
+
 
 def extract_link(link, tfile=False):
     try:
