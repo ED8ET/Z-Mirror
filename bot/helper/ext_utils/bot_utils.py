@@ -175,7 +175,7 @@ def get_readable_message():
                 globals()['COUNT'] -= STATUS_LIMIT
                 globals()['PAGE_NO'] -= 1
         for index, download in enumerate(list(download_dict.values())[COUNT:], start=1):
-            msg += f"<b><a href='https://t.me/h2dts>𝙿𝚘𝚠𝚎𝚛𝚎𝚍 𝚋𝚢 𝚂𝚘𝚞𝚛𝚌𝚎𝙿𝚕𝚎𝚊𝚜𝚎</a></b>\n"
+            #msg += f"<b><a href='https://t.me/h2dts>𝙿𝚘𝚠𝚎𝚛𝚎𝚍 𝚋𝚢 𝚂𝚘𝚞𝚛𝚌𝚎𝙿𝚕𝚎𝚊𝚜𝚎</a></b>\n"
             msg += f'\n\n<b>File Name:</b> <a href="https://t.me/c/{str(download.message.chat.id)[4:]}/{download.message.message_id}">{escape(str(download.name()))}</a>'
             msg += f"\n\n<b>Status:</b> <code>{download.status()}</code> <b>Using:</b> <code>{download.eng()}</code>"
             if download.status() not in [MirrorStatus.STATUS_SEEDING]:
