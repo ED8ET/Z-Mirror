@@ -566,16 +566,16 @@ try:
     if len(CHANNEL_USERNAME) == 0:
         raise KeyError
 except KeyError:
-    log_info("CHANNEL_USERNAME not provided..! Using default @Z-Mirror")
-    CHANNEL_USERNAME = "sourcepleaseindex"
+    log_info("CHANNEL_USERNAME not provided..! Using default @h2dts")
+    CHANNEL_USERNAME = "h2dts"
 try:
     FSUB_CHANNEL_ID = getConfig("FSUB_CHANNEL_ID")
     if len(FSUB_CHANNEL_ID) == 0:
         raise KeyError
     FSUB_CHANNEL_ID = int(FSUB_CHANNEL_ID)
 except KeyError:
-    log_info("CHANNEL_ID not provided! Using default id of @Z-Mirror")
-    FSUB_CHANNEL_ID = -1001240432549
+    log_info("CHANNEL_ID not provided! Using default id of @h2dts")
+    FSUB_CHANNEL_ID = -1001523739263
 
 updater = tgUpdater(token=BOT_TOKEN, request_kwargs={'read_timeout': 20, 'connect_timeout': 15})
 bot = updater.bot
