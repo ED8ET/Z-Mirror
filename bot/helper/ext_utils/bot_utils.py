@@ -167,7 +167,7 @@ dispatcher.add_handler(CallbackQueryHandler(pop_up_stats, pattern=f"^{str(THREE)
 
 def get_readable_message():
     with download_dict_lock:
-        msg = f'<a href="https://t.me/h2dts"><b>Source Please</b></a>\n\n'
+        msg = f'<a href="https://t.me/h2dts"><b>☠️Source Please🔞</b></a>\n\n'
         if STATUS_LIMIT is not None:
             tasks = len(download_dict)
             globals()['PAGES'] = ceil(tasks/STATUS_LIMIT)
