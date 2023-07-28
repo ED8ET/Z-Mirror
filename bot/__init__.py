@@ -567,7 +567,7 @@ try:
         raise KeyError
 except KeyError:
     log_info("CHANNEL_USERNAME not provided..! Using default @h2dts")
-    CHANNEL_USERNAME = "h2dts"
+    CHANNEL_USERNAME = "SourcePleaseML"
 try:
     FSUB_CHANNEL_ID = getConfig("FSUB_CHANNEL_ID")
     if len(FSUB_CHANNEL_ID) == 0:
