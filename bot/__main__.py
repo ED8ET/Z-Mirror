@@ -57,8 +57,8 @@ def stats(update, context):
 def start(update, context):
     buttons = ButtonMaker()
     buttons.buildbutton("Report Group", "https://t.me/+5C883AYX0JRmYjM5")
-    buttons.buildbutton("Update Channel", "https://t.me/h2dts")
-    buttons.buildbutton("Leech Group", "https://t.me/h2dts")
+    buttons.buildbutton("Update Channel", "https://t.me/SourcePleaseML")
+    buttons.buildbutton("Leech Group", "https://t.me/SourcePleaseML")
     buttons.buildbutton("Owner", "https://t.me/thoursbridi")
     reply_markup = buttons.build_menu(2)
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
